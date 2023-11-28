@@ -8,7 +8,7 @@ function App() {
   const operators = ['/', '*', '+', '-', '.'];
   const updateCalculations = value =>{
           //limiting the number of operations, preventing from adding a lot of operations
-        if(operators.includes(value) && calculation=== '' ||
+        if(operators.includes(value) && calculation === '' ||
             operators.includes(value) && operators.includes(calculation.slice(-1))
         ){
           return;
