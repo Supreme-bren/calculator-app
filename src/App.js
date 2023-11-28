@@ -56,18 +56,18 @@ function App() {
         { calculation || "0" }
       </div>
       <div className = "operators">
-        <button id="divide" onClick={() => updateCalculations('/')}>/</button>
-       <button id="multiply" onClick={() => updateCalculations('*')}>*</button>
-        <button id="add" onClick={() => updateCalculations('+')}>+/</button>
-        <button id="subtract" onClick={() => updateCalculations('-')}>-</button>
-        <button id="clear" onClick={deleteLastNumber}>DEL</button>
+        <button onClick={() => updateCalculations('/')}>/</button>
+       <button  onClick={() => updateCalculations('*')}>*</button>
+        <button onClick={() => updateCalculations('+')}>+/</button>
+        <button onClick={() => updateCalculations('-')}>-</button>
+        <button onClick={deleteLastNumber}>DEL</button>
       </div>
       <div className="numbers">
         { createNumbers() }
         <button onClick={() => updateCalculations('0')}>0</button>
-        <button id="decimal" onClick={() => updateCalculations('.')}>.</button>
+        <button onClick={() => updateCalculations('.')}>.</button>
 
-        <button id="equals" onClick={calc}>=</button>
+        <button onClick={calc}>=</button>
       </div>
      </div>
     </div>
